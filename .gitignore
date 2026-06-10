@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Model Checkpoints
+*.pth
+
+# Logs
+logs/
+outputs/logs/
+
+# Dataset
+data/raw_audio/
+data/processed_audio/
+
+# OS files
+.DS_Store
+Thumbs.db
