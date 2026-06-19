@@ -1,0 +1,28 @@
+# Core scientific computing
+numpy
+pandas
+scipy
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Machine learning
+scikit-learn
+
+# Deep learning
+torch
+torchvision
+torchaudio
+
+# Audio processing
+librosa
+soundfile
+
+# Utilities
+tqdm
+
+# Notebook support (for EDA)
+jupyter
+ipykernel
