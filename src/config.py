@@ -54,10 +54,20 @@ IPVS_PD_SUBGROUPS = [
 ]
 
 # ---------------------------------------------------------------------------
+# Output directories
+# ---------------------------------------------------------------------------
+OUTPUTS_DIR      = PROJECT_ROOT / "outputs"
+CHECKPOINTS_DIR  = OUTPUTS_DIR  / "checkpoints"
+LOGS_DIR         = OUTPUTS_DIR  / "logs"
+RESULTS_DIR      = OUTPUTS_DIR  / "results"
+REPORTS_DIR      = PROJECT_ROOT / "report"
+
+# ---------------------------------------------------------------------------
 # Manifest paths
 # ---------------------------------------------------------------------------
 RAW_MANIFEST_CSV       = DATA_DIR / "raw_manifest.csv"
 PROCESSED_MANIFEST_CSV = DATA_DIR / "processed_manifest.csv"
+CORRUPTION_REPORT_CSV  = REPORTS_DIR / "corruption_report.csv"
 
 # Split CSVs
 TRAIN_CSV = SPLITS_DIR / "train.csv"
@@ -66,14 +76,7 @@ TEST_CSV  = SPLITS_DIR / "test.csv"
 
 # Spectrogram statistics
 SPECTROGRAM_STATS_JSON = STATISTICS_DIR / "spectrogram_mean_std.json"
-
-# ---------------------------------------------------------------------------
-# Output directories
-# ---------------------------------------------------------------------------
-OUTPUTS_DIR      = PROJECT_ROOT / "outputs"
-CHECKPOINTS_DIR  = OUTPUTS_DIR  / "checkpoints"
-LOGS_DIR         = OUTPUTS_DIR  / "logs"
-RESULTS_DIR      = OUTPUTS_DIR  / "results"
+ 
 
 # ---------------------------------------------------------------------------
 # Audio preprocessing constants
@@ -136,6 +139,7 @@ _DIRS_TO_CREATE = [
     CHECKPOINTS_DIR,
     LOGS_DIR,
     RESULTS_DIR,
+    REPORTS_DIR,
 ]
 
 for _d in _DIRS_TO_CREATE:
