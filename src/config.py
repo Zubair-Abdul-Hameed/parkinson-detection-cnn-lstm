@@ -68,6 +68,8 @@ REPORTS_DIR      = PROJECT_ROOT / "report"
 RAW_MANIFEST_CSV       = DATA_DIR / "raw_manifest.csv"
 PROCESSED_MANIFEST_CSV = DATA_DIR / "processed_manifest.csv"
 CORRUPTION_REPORT_CSV  = REPORTS_DIR / "corruption_report.csv"
+QUALITY_REPORT_CSV     = REPORTS_DIR / "quality_assessment_report.csv"
+RMS_REPORT_CSV         = REPORTS_DIR / "high_rms_report.csv"
 
 # Split CSVs
 TRAIN_CSV = SPLITS_DIR / "train.csv"

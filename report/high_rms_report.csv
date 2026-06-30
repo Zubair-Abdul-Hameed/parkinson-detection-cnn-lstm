@@ -1,0 +1,26 @@
+recording_id,file_path,dataset,label,duration,sample_rate,rms_energy
+neurovoz_PD_O1_0015,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\PD_O1_0015.wav,neurovoz,PD,5.292562358276644,44100,0.5088320726674909
+neurovoz_PD_O1_0014,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\PD_O1_0014.wav,neurovoz,PD,4.502879818594105,44100,0.4805835668040891
+neurovoz_PD_O1_0010,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\PD_O1_0010.wav,neurovoz,PD,4.07204081632653,44100,0.4623231472490159
+neurovoz_PD_O1_0009,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\PD_O1_0009.wav,neurovoz,PD,3.70562358276644,44100,0.4607168161489092
+ipvs_VU2cfaerlei54F2605161810,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\ipvs\28 People with Parkinson's disease\1-5\Felicetta C\VU2cfaerlei54F2605161810.wav,ipvs,PD,11.75,44100,0.4370192678484748
+ipvs_VU1cfaerlei54F2605161808,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\ipvs\28 People with Parkinson's disease\1-5\Felicetta C\VU1cfaerlei54F2605161808.wav,ipvs,PD,10.650725623582767,44100,0.4334914913100731
+neurovoz_PD_E2_0024,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\PD_E2_0024.wav,neurovoz,PD,4.073424036281179,44100,0.4324228483390744
+neurovoz_PD_E2_0023,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\PD_E2_0023.wav,neurovoz,PD,3.707482993197279,44100,0.4296423982661419
+neurovoz_PD_E2_0022,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\PD_E2_0022.wav,neurovoz,PD,3.629727891156463,44100,0.429197108135344
+neurovoz_PD_E3_0007,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\PD_E3_0007.wav,neurovoz,PD,2.8599319727891155,44100,0.42298697616965
+neurovoz_HC_E3_0034,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\HC_E3_0034.wav,neurovoz,HC,5.844104308390023,44100,0.4205989451005216
+neurovoz_PD_E3_0011,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\PD_E3_0011.wav,neurovoz,PD,4.45609977324263,44100,0.419214604310588
+neurovoz_PD_E3_0008,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\PD_E3_0008.wav,neurovoz,PD,4.358412698412699,44100,0.4181914016470008
+neurovoz_PD_E2_0079,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\PD_E2_0079.wav,neurovoz,PD,3.693718820861678,44100,0.4179250603525477
+neurovoz_PD_E3_0012,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\PD_E3_0012.wav,neurovoz,PD,4.210521541950113,44100,0.4123612986663366
+neurovoz_PD_E3_0004,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\PD_E3_0004.wav,neurovoz,PD,3.2501587301587302,44100,0.4101800343480307
+neurovoz_PD_E2_0018,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\PD_E2_0018.wav,neurovoz,PD,3.9680725623582767,44100,0.4099085485954209
+neurovoz_PD_O1_0007,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\PD_O1_0007.wav,neurovoz,PD,3.094512471655329,44100,0.3952649539318073
+ipvs_VU2APGANRET55F170320171112,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\ipvs\22 Elderly Healthy Control\AGNESE P\VU2APGANRET55F170320171112.wav,ipvs,HC,7.0,16000,0.3435028368674527
+ipvs_VU1APGANRET55F170320171112,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\ipvs\22 Elderly Healthy Control\AGNESE P\VU1APGANRET55F170320171112.wav,ipvs,HC,10.40625,16000,0.3306656943718732
+ipvs_B2GCIALSDA52F170320171125,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\ipvs\22 Elderly Healthy Control\GILDA C\B2GCIALSDA52F170320171125.wav,ipvs,HC,58.125,16000,0.3169185263171662
+neurovoz_PD_E2_0077,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\neurovoz\zenodo_upload\audios\PD_E2_0077.wav,neurovoz,PD,4.446439909297053,44100,0.3130209140223791
+ipvs_B1GCIALSDA52F170320171124,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\ipvs\22 Elderly Healthy Control\GILDA C\B1GCIALSDA52F170320171124.wav,ipvs,HC,71.3125,16000,0.3090425811514654
+ipvs_VI1GMIAUSST39F100220171200,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\ipvs\28 People with Parkinson's disease\17-28\Giustina M\VI1GMIAUSST39F100220171200.wav,ipvs,PD,4.0,16000,0.3077612101639865
+ipvs_FB1GCIALSDA52F170320171133,C:\Users\USER\Desktop\parkinson-detection-cnn-lstm\data\raw_audio\ipvs\22 Elderly Healthy Control\GILDA C\FB1GCIALSDA52F170320171133.wav,ipvs,HC,25.84375,16000,0.3073528056261621
