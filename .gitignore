@@ -25,6 +25,7 @@ outputs/logs/
 # Dataset
 data/raw_audio/
 data/processed_audio/
+test_outputs/
 
 # OS files
 .DS_Store
