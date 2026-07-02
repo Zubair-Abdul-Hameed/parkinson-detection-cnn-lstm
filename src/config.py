@@ -71,6 +71,13 @@ CORRUPTION_REPORT_CSV  = REPORTS_DIR / "corruption_report.csv"
 QUALITY_REPORT_CSV     = REPORTS_DIR / "quality_assessment_report.csv"
 RMS_REPORT_CSV         = REPORTS_DIR / "high_rms_report.csv"
 
+# ---------------------------------------------------------------------------
+# Split ratios  (subject-level, stratified by dataset × label)
+# ---------------------------------------------------------------------------
+TRAIN_RATIO: float = 0.70
+VAL_RATIO:   float = 0.15
+TEST_RATIO:  float = 0.15
+
 # Split CSVs
 TRAIN_CSV = SPLITS_DIR / "train.csv"
 VAL_CSV   = SPLITS_DIR / "val.csv"
