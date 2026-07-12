@@ -70,6 +70,7 @@ PROCESSED_MANIFEST_CSV = DATA_DIR / "processed_manifest.csv"
 CORRUPTION_REPORT_CSV  = REPORTS_DIR / "corruption_report.csv"
 QUALITY_REPORT_CSV     = REPORTS_DIR / "quality_assessment_report.csv"
 RMS_REPORT_CSV         = REPORTS_DIR / "high_rms_report.csv"
+WINDOWS_MANIFEST_CSV   = DATA_DIR / "windows_manifest.csv"
 
 # ---------------------------------------------------------------------------
 # Split ratios  (subject-level, stratified by dataset × label)
@@ -153,3 +154,5 @@ _DIRS_TO_CREATE = [
 
 for _d in _DIRS_TO_CREATE:
     _d.mkdir(parents=True, exist_ok=True)
+
+    
