@@ -154,5 +154,3 @@ _DIRS_TO_CREATE = [
 
 for _d in _DIRS_TO_CREATE:
     _d.mkdir(parents=True, exist_ok=True)
-
-    

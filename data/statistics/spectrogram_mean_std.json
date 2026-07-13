@@ -1,0 +1,16 @@
+{
+  "mean": -32.85970492794322,
+  "std": 19.200554296215415,
+  "num_train_windows": 22162,
+  "num_train_recordings": 2663,
+  "num_values_accumulated": 178714368,
+  "mel_config": {
+    "n_mels": 128,
+    "n_fft": 1024,
+    "hop_length": 512,
+    "f_min": 0.0,
+    "f_max": 8000.0,
+    "sample_rate": 16000
+  },
+  "computed_at": "2026-07-13T16:16:54"
+}
