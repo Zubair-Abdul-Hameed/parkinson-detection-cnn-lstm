@@ -1,0 +1,47 @@
+# requirements_colab.txt
+#
+# Runtime dependencies for running this pipeline on Google Colab.
+#
+# Why this file is separate from requirements.txt:
+#   requirements.txt is a `pip freeze` of the local Windows development
+#   environment. It contains (a) Windows-only packages such as pywinpty,
+#   which cannot compile on Colab's Linux runtime, and (b) local Jupyter and
+#   IDE tooling irrelevant to training. It also pins exact versions, which
+#   forces pip to re-download packages Colab already provides.
+#
+# What this file contains:
+#   Only the packages actually imported by src/. Versions use >= minimums
+#   rather than exact pins, so pip keeps Colab's preinstalled versions
+#   whenever they already satisfy the constraint — no redundant downloads.
+#
+# Deliberately NOT listed: torch and torchaudio.
+#   Colab ships a PyTorch build already compiled against its GPU driver and
+#   CUDA runtime. Installing a pinned torch here would pull several hundred
+#   MB of NVIDIA CUDA libraries and risk replacing a working GPU build with
+#   a mismatched one. (torchaudio is additionally unused — all audio I/O in
+#   this project goes through librosa and soundfile.)
+#
+# Usage:  pip install -r requirements_colab.txt
+
+# Audio loading and processing
+# librosa >=0.10 required: it declares soxr as a dependency, needed for the
+# res_type="soxr_hq" resampler used in preprocessing/resample_audio.py
+librosa>=0.10.0
+soundfile>=0.12.0
+
+# Data handling
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Metrics (sklearn.metrics in training/trainer.py)
+scikit-learn>=1.3.0
+
+# Plotting (utils/plotting.py)
+matplotlib>=3.7.0
+
+# Progress bars
+tqdm>=4.65.0
+
+# Reading IPVS .xlsx metadata (data_ingestion/build_raw_manifest.py only —
+# not needed for training, kept so the full pipeline stays reproducible)
+openpyxl>=3.1.0
