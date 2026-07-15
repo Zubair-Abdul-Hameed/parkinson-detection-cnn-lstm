@@ -61,6 +61,7 @@ CHECKPOINTS_DIR  = OUTPUTS_DIR  / "checkpoints"
 LOGS_DIR         = OUTPUTS_DIR  / "logs"
 RESULTS_DIR      = OUTPUTS_DIR  / "results"
 REPORTS_DIR      = PROJECT_ROOT / "report"
+PLOTS_DIR        = RESULTS_DIR  / "plots"
 
 # ---------------------------------------------------------------------------
 # Manifest paths
@@ -150,6 +151,7 @@ _DIRS_TO_CREATE = [
     LOGS_DIR,
     RESULTS_DIR,
     REPORTS_DIR,
+    PLOTS_DIR,
 ]
 
 for _d in _DIRS_TO_CREATE:
