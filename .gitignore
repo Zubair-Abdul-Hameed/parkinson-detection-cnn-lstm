@@ -26,6 +26,7 @@ outputs/logs/
 data/raw_audio/
 data/processed_audio/
 test_outputs/
+app/uploads/
 
 # OS files
 .DS_Store

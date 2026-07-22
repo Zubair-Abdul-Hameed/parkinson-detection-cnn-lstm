@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinson's Detection — Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="card">
+        <h1>Result</h1>
+        <p class="filename">{{ filename }}</p>
+        <audio class="player" controls src="{{ url_for('serve_upload', filename=filename) }}"></audio>
+
+        <div class="verdict {{ 'verdict-pd' if label == 'PD' else 'verdict-hc' }}">
+            <span class="verdict-label">{{ label }}</span>
+            <span class="verdict-sub">
+                {{ 'Parkinson\'s Disease' if label == 'PD' else 'Healthy Control' }}
+            </span>
+        </div>
+
+        <div class="metric">
+            <div class="metric-row">
+                <span>Confidence in prediction</span>
+                <strong>{{ confidence }}%</strong>
+            </div>
+            <div class="bar">
+                <div class="bar-fill" style="width: {{ confidence }}%;"></div>
+            </div>
+        </div>
+
+        <div class="metric">
+            <div class="metric-row">
+                <span>Raw probability of PD</span>
+                <strong>{{ probability_pd }} ({{ probability_pd_pct }}%)</strong>
+            </div>
+            <div class="bar">
+                <div class="bar-fill bar-fill-muted" style="width: {{ probability_pd_pct }}%;"></div>
+            </div>
+        </div>
+
+        <p class="note">Aggregated over {{ num_windows }} analysis window{{ 's' if num_windows != 1 }}.</p>
+
+        <a class="btn btn-secondary" href="{{ url_for('upload_page') }}">Analyze another</a>
+
+        <p class="disclaimer">Research demonstration only — not a medical diagnosis.</p>
+    </main>
+</body>
+</html>

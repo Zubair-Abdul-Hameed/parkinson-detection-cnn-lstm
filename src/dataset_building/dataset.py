@@ -217,6 +217,8 @@ class PDWindowDataset(Dataset):
         # Materialised as plain lists so a sampler can read them without
         # going through pandas indexing for every item.
         self.subject_ids: List[str] = windows['subject_id'].tolist()
+        self.recording_ids: List[str] = windows['recording_id'].tolist()
+        self.datasets: List[str] = windows['dataset'].tolist()
         self.labels: List[int] = [LABEL_MAP[l] for l in windows['label']]
 
         # ── Normalization statistics: loaded ONCE, not per item ────────────
@@ -290,6 +292,18 @@ class PDWindowDataset(Dataset):
     def get_subject_id(self, idx: int) -> str:
         """Return the subject_id for an item without loading any audio."""
         return self.subject_ids[idx]
+    
+    def get_recording_id(self, idx: int) -> str:
+        """Return the recording_id for an item without loading any audio.
+
+        Used by evaluate.py to group window-level predictions back into their
+        parent recordings for recording-level aggregation.
+        """
+        return self.recording_ids[idx]
+
+    def get_dataset(self, idx: int) -> str:
+        """Return the dataset (neurovoz/ipvs) for an item without loading audio."""
+        return self.datasets[idx]
 
     def get_label(self, idx: int) -> int:
         """Return the encoded label for an item without loading any audio."""

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinson's Detection — Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="card">
+        <h1>Parkinson's Detection</h1>
+        <p class="subtitle">Upload a voice recording (<code>.wav</code>) to classify it as
+            Healthy Control (HC) or Parkinson's Disease (PD).</p>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="flash">
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+
+        <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+            <label class="file-label">
+                <input type="file" name="audio" accept=".wav" id="audio-input" required>
+            </label>
+
+            <audio id="preview-player" class="player" controls style="display: none;"></audio>
+
+            <button type="submit" class="btn">Analyze recording</button>
+        </form>
+
+        <script>
+            // Show a playable preview of the chosen file before uploading.
+            const input = document.getElementById('audio-input');
+            const player = document.getElementById('preview-player');
+            input.addEventListener('change', function () {
+                if (input.files && input.files[0]) {
+                    player.src = URL.createObjectURL(input.files[0]);
+                    player.style.display = 'block';
+                } else {
+                    player.style.display = 'none';
+                }
+            });
+        </script>
+
+        <p class="note">The recording is processed in memory and the uploaded file is
+            deleted immediately after analysis.</p>
+    </main>
+</body>
+</html>
