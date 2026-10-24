@@ -1,4 +1,5 @@
 # app/app.py
+# run using python app/app.py
 """
 Minimal Flask demo for the Parkinson's FYP.
 
